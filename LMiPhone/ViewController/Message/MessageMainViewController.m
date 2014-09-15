@@ -1,27 +1,23 @@
 //
-//  BaseViewController.m
+//  MessageMainViewController.m
 //  LMiPhone
 //
 //  Created by kris on 9/15/14.
 //  Copyright (c) 2014 kris. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "MessageMainViewController.h"
 
-@interface BaseViewController ()
+@interface MessageMainViewController ()
 
 @end
 
-@implementation BaseViewController
+@implementation MessageMainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
-    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:255/255.0 green:97/255.0 blue:0/255.0 alpha:1]];
-    self.edgesForExtendedLayout = UIRectEdgeNone;
-    self.extendedLayoutIncludesOpaqueBars = NO;
-    self.modalPresentationCapturesStatusBarAppearance = NO;
+    self.navigationItem.title = @"聊天";
 }
 
 - (void)didReceiveMemoryWarning {
