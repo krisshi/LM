@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  BaseViewController.h
 //  LMiPhone
 //
 //  Created by kris on 9/15/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
-
+@interface BaseViewController : UIViewController
 
 @end
-
