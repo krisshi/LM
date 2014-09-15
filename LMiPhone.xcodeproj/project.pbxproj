@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		183B7D5C19C6E01E00EF0184 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B7D5B19C6E01E00EF0184 /* main.m */; };
 		183B7D5F19C6E01E00EF0184 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B7D5E19C6E01E00EF0184 /* AppDelegate.m */; };
-		183B7D6219C6E01E00EF0184 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B7D6119C6E01E00EF0184 /* FirstViewController.m */; };
-		183B7D6519C6E01E00EF0184 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B7D6419C6E01E00EF0184 /* SecondViewController.m */; };
-		183B7D6819C6E01E00EF0184 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183B7D6619C6E01E00EF0184 /* Main.storyboard */; };
 		183B7D6A19C6E01E00EF0184 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183B7D6919C6E01E00EF0184 /* Images.xcassets */; };
 		183B7D6D19C6E01E00EF0184 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183B7D6B19C6E01E00EF0184 /* LaunchScreen.xib */; };
 		183B7D7919C6E01E00EF0184 /* LMiPhoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B7D7819C6E01E00EF0184 /* LMiPhoneTests.m */; };
@@ -33,11 +30,6 @@
 		183B7D5B19C6E01E00EF0184 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		183B7D5D19C6E01E00EF0184 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		183B7D5E19C6E01E00EF0184 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		183B7D6019C6E01E00EF0184 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		183B7D6119C6E01E00EF0184 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		183B7D6319C6E01E00EF0184 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		183B7D6419C6E01E00EF0184 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		183B7D6719C6E01E00EF0184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		183B7D6919C6E01E00EF0184 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		183B7D6C19C6E01E00EF0184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		183B7D7219C6E01E00EF0184 /* LMiPhoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LMiPhoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,11 +78,6 @@
 			children = (
 				183B7D5D19C6E01E00EF0184 /* AppDelegate.h */,
 				183B7D5E19C6E01E00EF0184 /* AppDelegate.m */,
-				183B7D6019C6E01E00EF0184 /* FirstViewController.h */,
-				183B7D6119C6E01E00EF0184 /* FirstViewController.m */,
-				183B7D6319C6E01E00EF0184 /* SecondViewController.h */,
-				183B7D6419C6E01E00EF0184 /* SecondViewController.m */,
-				183B7D6619C6E01E00EF0184 /* Main.storyboard */,
 				183B7D6919C6E01E00EF0184 /* Images.xcassets */,
 				183B7D6B19C6E01E00EF0184 /* LaunchScreen.xib */,
 				183B7D5919C6E01E00EF0184 /* Supporting Files */,
@@ -204,7 +191,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				183B7D6819C6E01E00EF0184 /* Main.storyboard in Resources */,
 				183B7D6D19C6E01E00EF0184 /* LaunchScreen.xib in Resources */,
 				183B7D6A19C6E01E00EF0184 /* Images.xcassets in Resources */,
 			);
@@ -224,9 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				183B7D6519C6E01E00EF0184 /* SecondViewController.m in Sources */,
 				183B7D5F19C6E01E00EF0184 /* AppDelegate.m in Sources */,
-				183B7D6219C6E01E00EF0184 /* FirstViewController.m in Sources */,
 				183B7D5C19C6E01E00EF0184 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,14 +234,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		183B7D6619C6E01E00EF0184 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				183B7D6719C6E01E00EF0184 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		183B7D6B19C6E01E00EF0184 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
