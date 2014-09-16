@@ -1,0 +1,24 @@
+//
+//  PrefixHeader.pch
+//  LMiPhone
+//
+//  Created by kris on 9/16/14.
+//  Copyright (c) 2014 kris. All rights reserved.
+//
+
+#ifndef LMiPhone_PrefixHeader_pch
+#define LMiPhone_PrefixHeader_pch
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Contant.h"
+// debug log switch
+//#ifdef DEBUG
+//#    define NSLog(...) NSLog(__VA_ARGS__)
+//#else
+//#    define NSLog(...) {}
+//#endif
+#endif
+
+#endif

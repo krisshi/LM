@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface MessageMainViewController : UIViewController
+@interface MessageMainViewController : BaseViewController
 
 @end

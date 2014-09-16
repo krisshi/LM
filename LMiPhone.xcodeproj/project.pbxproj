@@ -13,7 +13,8 @@
 		183B7D6A19C6E01E00EF0184 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183B7D6919C6E01E00EF0184 /* Images.xcassets */; };
 		183B7D6D19C6E01E00EF0184 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183B7D6B19C6E01E00EF0184 /* LaunchScreen.xib */; };
 		183B7D7919C6E01E00EF0184 /* LMiPhoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B7D7819C6E01E00EF0184 /* LMiPhoneTests.m */; };
-		183B7D8A19C6E42900EF0184 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B7D8919C6E42900EF0184 /* BaseViewController.m */; };
+		18A3C1B119C80C4300998952 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A3C1B019C80C4300998952 /* BaseViewController.m */; };
+		18A3C1B519C80CD600998952 /* BaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A3C1B419C80CD600998952 /* BaseService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +40,12 @@
 		183B7D7219C6E01E00EF0184 /* LMiPhoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LMiPhoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		183B7D7719C6E01E00EF0184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		183B7D7819C6E01E00EF0184 /* LMiPhoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMiPhoneTests.m; sourceTree = "<group>"; };
-		183B7D8819C6E42900EF0184 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		183B7D8919C6E42900EF0184 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		18A3C1AF19C80C4300998952 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		18A3C1B019C80C4300998952 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		18A3C1B219C80CB700998952 /* Contant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contant.h; sourceTree = "<group>"; };
+		18A3C1B319C80CD600998952 /* BaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseService.h; sourceTree = "<group>"; };
+		18A3C1B419C80CD600998952 /* BaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseService.m; sourceTree = "<group>"; };
+		18A3C1B719C8102F00998952 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +105,7 @@
 			children = (
 				183B7D5A19C6E01E00EF0184 /* Info.plist */,
 				183B7D5B19C6E01E00EF0184 /* main.m */,
+				18A3C1B719C8102F00998952 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -124,6 +130,7 @@
 		183B7D8219C6E39F00EF0184 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				18A3C1B219C80CB700998952 /* Contant.h */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -138,6 +145,8 @@
 		183B7D8419C6E39F00EF0184 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				18A3C1B319C80CD600998952 /* BaseService.h */,
+				18A3C1B419C80CD600998952 /* BaseService.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -146,8 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				183B7D8719C6E40100EF0184 /* Message */,
-				183B7D8819C6E42900EF0184 /* BaseViewController.h */,
-				183B7D8919C6E42900EF0184 /* BaseViewController.m */,
+				18A3C1AF19C80C4300998952 /* BaseViewController.h */,
+				18A3C1B019C80C4300998952 /* BaseViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -261,9 +270,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				183B7D5F19C6E01E00EF0184 /* AppDelegate.m in Sources */,
-				183B7D8A19C6E42900EF0184 /* BaseViewController.m in Sources */,
+				18A3C1B119C80C4300998952 /* BaseViewController.m in Sources */,
 				183B7D5C19C6E01E00EF0184 /* main.m in Sources */,
 				1810F52C19C6E9EB00103838 /* MessageMainViewController.m in Sources */,
+				18A3C1B519C80CD600998952 /* BaseService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +387,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LMiPhone/PrefixHeader.pch;
 				INFOPLIST_FILE = LMiPhone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -388,6 +400,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LMiPhone/PrefixHeader.pch;
 				INFOPLIST_FILE = LMiPhone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
