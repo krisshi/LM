@@ -11,8 +11,12 @@
 		183B7D5C19C6E01E00EF0184 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B7D5B19C6E01E00EF0184 /* main.m */; };
 		183B7D5F19C6E01E00EF0184 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B7D5E19C6E01E00EF0184 /* AppDelegate.m */; };
 		183B7D6A19C6E01E00EF0184 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183B7D6919C6E01E00EF0184 /* Images.xcassets */; };
-		183B7D6D19C6E01E00EF0184 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183B7D6B19C6E01E00EF0184 /* LaunchScreen.xib */; };
 		183B7D7919C6E01E00EF0184 /* LMiPhoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B7D7819C6E01E00EF0184 /* LMiPhoneTests.m */; };
+		183D5C1D19C97F00005A2A1A /* ChatListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D5C1C19C97F00005A2A1A /* ChatListTableViewController.m */; };
+		1862721E19C93FF70013D4AE /* LMBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1862721D19C93FF70013D4AE /* LMBarViewController.m */; };
+		1862722219C940390013D4AE /* LMNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1862722119C940390013D4AE /* LMNavViewController.m */; };
+		18965F9E19C918C600A3E083 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18965F9D19C918C600A3E083 /* InfoPlist.strings */; };
+		18965FA019C91DC300A3E083 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18965F9F19C91DC300A3E083 /* MainStoryboard.storyboard */; };
 		18A3C1B119C80C4300998952 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A3C1B019C80C4300998952 /* BaseViewController.m */; };
 		18A3C1B519C80CD600998952 /* BaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A3C1B419C80CD600998952 /* BaseService.m */; };
 /* End PBXBuildFile section */
@@ -36,10 +40,17 @@
 		183B7D5D19C6E01E00EF0184 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		183B7D5E19C6E01E00EF0184 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		183B7D6919C6E01E00EF0184 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		183B7D6C19C6E01E00EF0184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		183B7D7219C6E01E00EF0184 /* LMiPhoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LMiPhoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		183B7D7719C6E01E00EF0184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		183B7D7819C6E01E00EF0184 /* LMiPhoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMiPhoneTests.m; sourceTree = "<group>"; };
+		183D5C1B19C97F00005A2A1A /* ChatListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatListTableViewController.h; sourceTree = "<group>"; };
+		183D5C1C19C97F00005A2A1A /* ChatListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatListTableViewController.m; sourceTree = "<group>"; };
+		1862721C19C93FF70013D4AE /* LMBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMBarViewController.h; sourceTree = "<group>"; };
+		1862721D19C93FF70013D4AE /* LMBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMBarViewController.m; sourceTree = "<group>"; };
+		1862722019C940390013D4AE /* LMNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMNavViewController.h; sourceTree = "<group>"; };
+		1862722119C940390013D4AE /* LMNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMNavViewController.m; sourceTree = "<group>"; };
+		18965F9D19C918C600A3E083 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		18965F9F19C91DC300A3E083 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		18A3C1AF19C80C4300998952 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		18A3C1B019C80C4300998952 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		18A3C1B219C80CB700998952 /* Contant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contant.h; sourceTree = "<group>"; };
@@ -94,8 +105,8 @@
 				183B7D5D19C6E01E00EF0184 /* AppDelegate.h */,
 				183B7D5E19C6E01E00EF0184 /* AppDelegate.m */,
 				183B7D6919C6E01E00EF0184 /* Images.xcassets */,
-				183B7D6B19C6E01E00EF0184 /* LaunchScreen.xib */,
 				183B7D5919C6E01E00EF0184 /* Supporting Files */,
+				18965F9F19C91DC300A3E083 /* MainStoryboard.storyboard */,
 			);
 			path = LMiPhone;
 			sourceTree = "<group>";
@@ -106,6 +117,7 @@
 				183B7D5A19C6E01E00EF0184 /* Info.plist */,
 				183B7D5B19C6E01E00EF0184 /* main.m */,
 				18A3C1B719C8102F00998952 /* PrefixHeader.pch */,
+				18965F9D19C918C600A3E083 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -131,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				18A3C1B219C80CB700998952 /* Contant.h */,
+				1862721A19C93FF70013D4AE /* Controllers */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -154,6 +167,7 @@
 		183B7D8519C6E39F00EF0184 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				183D5C1A19C97EE9005A2A1A /* Chat */,
 				183B7D8719C6E40100EF0184 /* Message */,
 				18A3C1AF19C80C4300998952 /* BaseViewController.h */,
 				18A3C1B019C80C4300998952 /* BaseViewController.m */,
@@ -168,6 +182,42 @@
 				1810F52B19C6E9EB00103838 /* MessageMainViewController.m */,
 			);
 			path = Message;
+			sourceTree = "<group>";
+		};
+		183D5C1A19C97EE9005A2A1A /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				183D5C1B19C97F00005A2A1A /* ChatListTableViewController.h */,
+				183D5C1C19C97F00005A2A1A /* ChatListTableViewController.m */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		1862721A19C93FF70013D4AE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1862721F19C940110013D4AE /* Nav */,
+				1862721B19C93FF70013D4AE /* Tabbar */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1862721B19C93FF70013D4AE /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				1862721C19C93FF70013D4AE /* LMBarViewController.h */,
+				1862721D19C93FF70013D4AE /* LMBarViewController.m */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		1862721F19C940110013D4AE /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				1862722019C940390013D4AE /* LMNavViewController.h */,
+				1862722119C940390013D4AE /* LMNavViewController.m */,
+			);
+			path = Nav;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +283,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 183B7D4D19C6E01E00EF0184;
 			productRefGroup = 183B7D5719C6E01E00EF0184 /* Products */;
@@ -250,8 +301,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				183B7D6D19C6E01E00EF0184 /* LaunchScreen.xib in Resources */,
+				18965FA019C91DC300A3E083 /* MainStoryboard.storyboard in Resources */,
 				183B7D6A19C6E01E00EF0184 /* Images.xcassets in Resources */,
+				18965F9E19C918C600A3E083 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,8 +322,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				183B7D5F19C6E01E00EF0184 /* AppDelegate.m in Sources */,
+				1862722219C940390013D4AE /* LMNavViewController.m in Sources */,
 				18A3C1B119C80C4300998952 /* BaseViewController.m in Sources */,
+				183D5C1D19C97F00005A2A1A /* ChatListTableViewController.m in Sources */,
 				183B7D5C19C6E01E00EF0184 /* main.m in Sources */,
+				1862721E19C93FF70013D4AE /* LMBarViewController.m in Sources */,
 				1810F52C19C6E9EB00103838 /* MessageMainViewController.m in Sources */,
 				18A3C1B519C80CD600998952 /* BaseService.m in Sources */,
 			);
@@ -294,17 +349,6 @@
 			targetProxy = 183B7D7319C6E01E00EF0184 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		183B7D6B19C6E01E00EF0184 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				183B7D6C19C6E01E00EF0184 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		183B7D7A19C6E01E00EF0184 /* Debug */ = {
@@ -341,7 +385,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -376,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -387,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = LMiPhone/PrefixHeader.pch;
 				INFOPLIST_FILE = LMiPhone/Info.plist;
@@ -400,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = LMiPhone/PrefixHeader.pch;
 				INFOPLIST_FILE = LMiPhone/Info.plist;

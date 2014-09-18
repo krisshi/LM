@@ -1,30 +1,36 @@
 //
-//  MessageMainViewController.m
+//  LMNavViewController.m
 //  LMiPhone
 //
-//  Created by kris on 9/15/14.
+//  Created by kris on 9/17/14.
 //  Copyright (c) 2014 kris. All rights reserved.
 //
 
-#import "MessageMainViewController.h"
+#import "LMNavViewController.h"
 
-@interface MessageMainViewController ()
+@interface LMNavViewController ()
 
 @end
 
-@implementation MessageMainViewController
+@implementation LMNavViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationItem.title = @"聊天";
-    self.view.backgroundColor = NavColor;
+    self.navigationBar.translucent = NO;
+    UIColor * cc = [UIColor whiteColor];
+    NSDictionary * dict = [NSDictionary dictionaryWithObject:cc forKey:NSForegroundColorAttributeName];
+    self.navigationBar.titleTextAttributes = dict;
+    [self.navigationBar setTintColor: cc];
+    [self.navigationBar setBarTintColor:MainColor];
+    [self.navigationBar setTranslucent:YES];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 /*
 #pragma mark - Navigation
 

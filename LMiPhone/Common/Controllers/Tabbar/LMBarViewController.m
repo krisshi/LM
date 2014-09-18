@@ -1,30 +1,33 @@
 //
-//  MessageMainViewController.m
+//  LMBarViewController.m
 //  LMiPhone
 //
-//  Created by kris on 9/15/14.
+//  Created by kris on 9/17/14.
 //  Copyright (c) 2014 kris. All rights reserved.
 //
 
-#import "MessageMainViewController.h"
+#import "LMBarViewController.h"
 
-@interface MessageMainViewController ()
+@interface LMBarViewController ()
 
 @end
 
-@implementation MessageMainViewController
+@implementation LMBarViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationItem.title = @"聊天";
-    self.view.backgroundColor = NavColor;
+    self.tabBar.tintColor = [UIColor whiteColor];
+    UIView *bgView = [[UIView alloc] initWithFrame:self.tabBar.bounds];
+    bgView.backgroundColor = [UIColor colorWithRed:61/255.f green:46/255.f blue:98/255.f alpha:1];
+    [self.tabBar insertSubview:bgView atIndex:0];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 /*
 #pragma mark - Navigation
 

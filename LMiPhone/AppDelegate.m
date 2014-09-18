@@ -17,10 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    [self.window makeKeyAndVisible];
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self createTabBarController];
+    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+    UINavigationController *navigationController = [tabBarController viewControllers][0]; 
     return YES;
 }
 
@@ -44,31 +42,5 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
-#pragma mark-private method
--(void)createTabBarController
-{
-    if (!_tabBarController) {
-        //1
-        MessageMainViewController *oMsgMainViewController = [[MessageMainViewController alloc] init];
-        UITabBarItem *mytabBarItem=[[UITabBarItem alloc] initWithTitle:@"聊天" image:[UIImage imageNamed:@"tabbar_icon_0"] tag:0];
-        [oMsgMainViewController setTabBarItem:mytabBarItem];
-        UINavigationController *messageNct= [[UINavigationController alloc] initWithRootViewController:oMsgMainViewController];
-        //2
-        MessageMainViewController *oWeiBoMainViewController = [[MessageMainViewController alloc] init];
-        UITabBarItem *mytabBarItem2=[[UITabBarItem alloc] initWithTitle:@"聊天1" image:[UIImage imageNamed:@"tabbar_icon_0"] tag:0];
-        [oWeiBoMainViewController setTabBarItem:mytabBarItem2];
-        UINavigationController *weiboNct= [[UINavigationController alloc] initWithRootViewController:oWeiBoMainViewController];
-        _tabBarController = [[UITabBarController alloc] init];
-        _tabBarController.selectedIndex = 0;
-        self.tabBarController.viewControllers = [NSArray arrayWithObjects:messageNct,weiboNct,nil];
-        self.tabBarController.tabBar.tintColor = [UIColor whiteColor];
-        
-        UIView *bgView = [[UIView alloc] initWithFrame:self.tabBarController.tabBar.bounds];
-        bgView.backgroundColor = [UIColor colorWithRed:61/255.f green:46/255.f blue:98/255.f alpha:1];
-        [self.tabBarController.tabBar insertSubview:bgView atIndex:0];
-        self.tabBarController.tabBar.opaque = YES;
-    }
-    self.window.rootViewController =_tabBarController;
 }
 @end

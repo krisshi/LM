@@ -13,17 +13,23 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationController.navigationBar.translucent = NO;
     
-    UIColor * cc = [UIColor whiteColor];
-    
-    NSDictionary * dict = [NSDictionary dictionaryWithObject:cc forKey:NSForegroundColorAttributeName];
-    self.navigationController.navigationBar.titleTextAttributes = dict;
-    
-    [self.navigationController.navigationBar setTintColor: cc];
-    [self.navigationController.navigationBar setBarTintColor:MainColor];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.extendedLayoutIncludesOpaqueBars = NO;
     self.modalPresentationCapturesStatusBarAppearance = NO;
+    
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+
+    [self setNeedsStatusBarAppearanceUpdate];
+}
+-(UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+- (BOOL)prefersStatusBarHidden
+{
+    return NO;
 }
 @end
