@@ -7,7 +7,7 @@
 //
 
 #import "ChatListTableViewController.h"
-
+#import "ChatListCell.h"
 @interface ChatListTableViewController ()
 
 @end
@@ -43,12 +43,11 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ChatListCell" forIndexPath:indexPath];
-    cell.textLabel.text = @"小明";
-    cell.detailTextLabel.text = @"sagasdgas所噶水电费煽风点火水电费法国号sagasdgas所噶水电费煽风点火水电费法国号sagasdgas所噶水电费煽风点火水电费法国号";
-    UILabel *lblTime = (UILabel *)[cell.contentView viewWithTag:10];
-    lblTime.text = @"上午10:10";
-    
+    ChatListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ChatListCell" forIndexPath:indexPath];
+    cell.lblName.text = @"小明";
+    cell.lblDetails.text = @"sagasdgas所噶水电费煽风点火水电费法国号sagasdgas所噶水电费煽风点火水电费法国号sagasdgas所噶水电费煽风点火水电费法国号";
+    cell.lblLastTime.text = @"上午10:10";
+    cell.imageView.image = [UIImage imageNamed:@"tabbar_icon_0"];
     return cell;
 }
 

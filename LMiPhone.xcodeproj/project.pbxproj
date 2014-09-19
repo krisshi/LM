@@ -19,6 +19,7 @@
 		18965FA019C91DC300A3E083 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18965F9F19C91DC300A3E083 /* MainStoryboard.storyboard */; };
 		18A3C1B119C80C4300998952 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A3C1B019C80C4300998952 /* BaseViewController.m */; };
 		18A3C1B519C80CD600998952 /* BaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A3C1B419C80CD600998952 /* BaseService.m */; };
+		18F9845A19CAC70D00CFCBAB /* ChatListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F9845919CAC70D00CFCBAB /* ChatListCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		18A3C1B319C80CD600998952 /* BaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseService.h; sourceTree = "<group>"; };
 		18A3C1B419C80CD600998952 /* BaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseService.m; sourceTree = "<group>"; };
 		18A3C1B719C8102F00998952 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		18F9845819CAC70D00CFCBAB /* ChatListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatListCell.h; sourceTree = "<group>"; };
+		18F9845919CAC70D00CFCBAB /* ChatListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatListCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +192,8 @@
 			children = (
 				183D5C1B19C97F00005A2A1A /* ChatListTableViewController.h */,
 				183D5C1C19C97F00005A2A1A /* ChatListTableViewController.m */,
+				18F9845819CAC70D00CFCBAB /* ChatListCell.h */,
+				18F9845919CAC70D00CFCBAB /* ChatListCell.m */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -324,6 +329,7 @@
 				183B7D5F19C6E01E00EF0184 /* AppDelegate.m in Sources */,
 				1862722219C940390013D4AE /* LMNavViewController.m in Sources */,
 				18A3C1B119C80C4300998952 /* BaseViewController.m in Sources */,
+				18F9845A19CAC70D00CFCBAB /* ChatListCell.m in Sources */,
 				183D5C1D19C97F00005A2A1A /* ChatListTableViewController.m in Sources */,
 				183B7D5C19C6E01E00EF0184 /* main.m in Sources */,
 				1862721E19C93FF70013D4AE /* LMBarViewController.m in Sources */,
