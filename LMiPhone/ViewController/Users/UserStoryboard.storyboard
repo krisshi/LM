@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A361c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--帐号登录-->
+        <scene sceneID="s3J-Af-pPe">
+            <objects>
+                <tableViewController id="A9M-CP-AIE" customClass="LoginTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="PcN-Ja-nXh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="tTk-Ps-APf">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LoginTextCell" id="3VJ-JY-5jr" customClass="LoginByUsernameTableViewCell">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3VJ-JY-5jr" id="z9h-2C-Qq8">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="填写帐号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hht-dB-5NI">
+                                                    <rect key="frame" x="7" y="7" width="586" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hht-dB-5NI" firstAttribute="leading" secondItem="z9h-2C-Qq8" secondAttribute="leading" constant="7" id="43b-IS-iLk"/>
+                                                <constraint firstItem="hht-dB-5NI" firstAttribute="top" secondItem="z9h-2C-Qq8" secondAttribute="top" constant="7" id="BCH-qw-ecO"/>
+                                                <constraint firstAttribute="trailing" secondItem="hht-dB-5NI" secondAttribute="trailing" constant="7" id="hKr-Ho-mL6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="textField" destination="hht-dB-5NI" id="OwW-TV-N0r"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LoginTextCell" id="9n5-xl-6yL" customClass="LoginByUsernameTableViewCell">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9n5-xl-6yL" id="78u-l0-K70">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="填写密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="om2-NR-Kol">
+                                                    <rect key="frame" x="7" y="7" width="586" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="om2-NR-Kol" firstAttribute="top" secondItem="78u-l0-K70" secondAttribute="top" constant="7" id="P4k-ht-gVC"/>
+                                                <constraint firstItem="om2-NR-Kol" firstAttribute="leading" secondItem="78u-l0-K70" secondAttribute="leading" constant="7" id="dje-0q-vup"/>
+                                                <constraint firstAttribute="trailing" secondItem="om2-NR-Kol" secondAttribute="trailing" constant="7" id="g3q-XN-vx9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="textField" destination="om2-NR-Kol" id="htv-NN-yv3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="A9M-CP-AIE" id="73Z-wg-LsM"/>
+                            <outlet property="delegate" destination="A9M-CP-AIE" id="Xu1-Jd-jNc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="帐号登录" id="YPp-Qn-fFI">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="rsC-wU-tAJ">
+                            <connections>
+                                <action selector="actionCancel:" destination="A9M-CP-AIE" id="tBQ-Xc-Vxf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tfPassword" destination="om2-NR-Kol" id="DBQ-Q8-Z0a"/>
+                        <outlet property="tfUserName" destination="hht-dB-5NI" id="9tY-74-VeT"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UYJ-Fs-wOL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="399"/>
+        </scene>
+        <!--Nav View Controller-->
+        <scene sceneID="Rgc-Q0-qLI">
+            <objects>
+                <navigationController storyboardIdentifier="LMNavLogin" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Up5-5U-jfQ" customClass="LMNavViewController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MoU-dF-OzW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="A9M-CP-AIE" kind="relationship" relationship="rootViewController" id="xRV-PH-oQm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eKU-zr-Uog" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-777" y="400"/>
+        </scene>
+    </scenes>
+</document>

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1810F52C19C6E9EB00103838 /* MessageMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1810F52B19C6E9EB00103838 /* MessageMainViewController.m */; };
+		18112F0419CBCF1C009EFC12 /* LoginByUsernameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18112F0319CBCF1C009EFC12 /* LoginByUsernameTableViewCell.m */; };
+		18398FED19CC029F0001BAF7 /* LoginTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18398FEB19CC029F0001BAF7 /* LoginTableViewController.m */; };
+		18398FF019CC12E30001BAF7 /* UserStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18398FEF19CC12E30001BAF7 /* UserStoryboard.storyboard */; };
 		183B7D5C19C6E01E00EF0184 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B7D5B19C6E01E00EF0184 /* main.m */; };
 		183B7D5F19C6E01E00EF0184 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B7D5E19C6E01E00EF0184 /* AppDelegate.m */; };
 		183B7D6A19C6E01E00EF0184 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183B7D6919C6E01E00EF0184 /* Images.xcassets */; };
@@ -35,6 +38,11 @@
 /* Begin PBXFileReference section */
 		1810F52A19C6E9EB00103838 /* MessageMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageMainViewController.h; sourceTree = "<group>"; };
 		1810F52B19C6E9EB00103838 /* MessageMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageMainViewController.m; sourceTree = "<group>"; };
+		18112F0219CBCF1C009EFC12 /* LoginByUsernameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginByUsernameTableViewCell.h; sourceTree = "<group>"; };
+		18112F0319CBCF1C009EFC12 /* LoginByUsernameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginByUsernameTableViewCell.m; sourceTree = "<group>"; };
+		18398FEA19CC029F0001BAF7 /* LoginTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTableViewController.h; sourceTree = "<group>"; };
+		18398FEB19CC029F0001BAF7 /* LoginTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableViewController.m; sourceTree = "<group>"; };
+		18398FEF19CC12E30001BAF7 /* UserStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserStoryboard.storyboard; sourceTree = "<group>"; };
 		183B7D5619C6E01E00EF0184 /* LMiPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LMiPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		183B7D5A19C6E01E00EF0184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		183B7D5B19C6E01E00EF0184 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -80,6 +88,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18112EFB19CBCD59009EFC12 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				18112F0119CBCEE1009EFC12 /* Cells */,
+				18398FEA19CC029F0001BAF7 /* LoginTableViewController.h */,
+				18398FEB19CC029F0001BAF7 /* LoginTableViewController.m */,
+				18398FEF19CC12E30001BAF7 /* UserStoryboard.storyboard */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		18112F0119CBCEE1009EFC12 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				18112F0219CBCF1C009EFC12 /* LoginByUsernameTableViewCell.h */,
+				18112F0319CBCF1C009EFC12 /* LoginByUsernameTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		183B7D4D19C6E01E00EF0184 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +198,7 @@
 		183B7D8519C6E39F00EF0184 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				18112EFB19CBCD59009EFC12 /* Users */,
 				183D5C1A19C97EE9005A2A1A /* Chat */,
 				183B7D8719C6E40100EF0184 /* Message */,
 				18A3C1AF19C80C4300998952 /* BaseViewController.h */,
@@ -306,6 +335,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18398FF019CC12E30001BAF7 /* UserStoryboard.storyboard in Resources */,
 				18965FA019C91DC300A3E083 /* MainStoryboard.storyboard in Resources */,
 				183B7D6A19C6E01E00EF0184 /* Images.xcassets in Resources */,
 				18965F9E19C918C600A3E083 /* InfoPlist.strings in Resources */,
@@ -334,6 +364,8 @@
 				183B7D5C19C6E01E00EF0184 /* main.m in Sources */,
 				1862721E19C93FF70013D4AE /* LMBarViewController.m in Sources */,
 				1810F52C19C6E9EB00103838 /* MessageMainViewController.m in Sources */,
+				18112F0419CBCF1C009EFC12 /* LoginByUsernameTableViewCell.m in Sources */,
+				18398FED19CC029F0001BAF7 /* LoginTableViewController.m in Sources */,
 				18A3C1B519C80CD600998952 /* BaseService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
